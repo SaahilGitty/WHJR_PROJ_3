@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sajjad's Savories</title>
+
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="bootstrap.bundle.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+<body onload="viewItems()">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-image: url('splash.png'); background-size:cover;;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style=" font-family: 'Product Sans', 'Century Gothic'; color: white">Sajjad's Savouries</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#menu" style=" font-family: 'Product Sans', 'Century Gothic'; color: white">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style=" font-family: 'Product Sans', 'Century Gothic'; color: white">All Pizzas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style=" font-family: 'Product Sans', 'Century Gothic'; color: white">Contacts</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" style=" font-family: 'Product Sans', 'Century Gothic'; color: white" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  More
+                </a>
+                <ul class="dropdown-menu" style="background-color: black;" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#" style=" font-family: 'Product Sans', 'Century Gothic'; color: white">Source Code</a></li>
+                  <li><a class="dropdown-item" href="#" style=" font-family: 'Product Sans', 'Century Gothic'; color: white">My Github</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <br>
+      <div class="row" style="padding-left: 20px; padding-right: 20px;">
+        <div class="col-sm-4">
+          <div class="card">
+            <img src="https://imgr.search.brave.com/qkE-Hf7KqOTwJY2QiL0LqEMZRGh5Wqm5OvfBehDEBIs/fit/1200/1200/no/1/aHR0cHM6Ly9rcmlz/cHlwaXp6YS5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMTYv/MTEvOU02QTAxOTEu/anBn" height="275px" width="100%" alt="" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Pizza Margherita</h5>
+              <p class="card-text">A special sauce of chunky tomatoes, garlic, olive oil & basil, topped with sliced fresh mozzarella & baked to perfection</p>
+              <a href="https://en.wikipedia.org/wiki/Pizza_Margherita" id="marg" class="btn btn-primary" onmouseover="margherita()" onmouseout="restore_margherita()">More About Pizza Margherita</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <img src="https://imgr.search.brave.com/8QbMKtuPghZ9GQlzM09U6znfqOnKQWvhvggjGTp0XL8/fit/1000/1000/no/1/aHR0cHM6Ly9mcmFu/a3NwaXp6YXBoaWxs/aXBzYnVyZy5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjAv/MDUvY2hlZXNlLmpw/Zw" height="275px" width="100%" alt="" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Classic Cheese</h5>
+              <p class="card-text">The quintessential cheese pizza, loaded with cheese over our hand-tossed crust... yum!</p>
+              <a href="https://en.wikipedia.org/wiki/Pizza" id="clas"  class="btn btn-primary" onmouseover="classic()" onmouseout="restore_classic()">More about Classic Cheese Pizza</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <img src="https://imgr.search.brave.com/ZAxP1gQ3s3dkweipnL3E2hYyUmhQQIuQqmzFknVMXvE/fit/1200/1200/no/1/aHR0cHM6Ly9pMC53/cC5jb20vd3d3LnBl/cHBlcmRlbGlnaHQu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDE2LzA2L3BlcHBl/ci1kZWxpZ2h0LXRh/bmRvb3JpLWNoaWNr/ZW4tcGl6emEtMy5q/cGc_cmVzaXplPTM3/MjgsMzY5Ng" height="275px" width="100%" alt="" class="card-img-top">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Chicken BBQ</h5>
+              <p class="card-text">Sliced chicken breast strips, onions, green chilies, jack & cheddar cheese over BBQ sauce..</p>
+              <a href="https://www.allrecipes.com/recipe/24878/bbq-chicken-pizza/" onmouseover="bbq()" onmouseout="restore_bbq()" id="bbq" class="btn btn-primary">Make it home-made!</a>
+            </div>
+          </div>
+         </div>
+      </div>
+      <br>
+      <div class="row" style="padding-left: 20px; padding-top: 20px; padding-right: 20px; background-color: rgb(59, 59, 59);">
+        <br>
+            <div class="col-sm-6">
+              <img title="Double-Click me to show some different images" src="splash.png" id="carousel" ondblclick="carousel()" height="460" width="100%" alt="">
+             </div>
+            <div class="col-sm-6">
+              <ol>
+                <li id="pizza1">
+    
+                </li>
+                <li id="pizza2">
+    
+                </li>
+                <li id="pizza3">
+    
+                </li>
+                <li id="pizza4">
+    
+                </li>
+                <hr>
+                <li id="side1">
+    
+                </li>
+                <li id="side2">
+    
+                </li>
+                <hr>
+                <li id="dessert1">
+    
+                </li>
+                <li id="dessert2">
+    
+                </li> 
+                <li id="dessert3">
+    
+                </li> 
+            </div>
+          </div>
+</body>
+</html>
